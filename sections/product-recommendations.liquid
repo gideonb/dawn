@@ -65,14 +65,15 @@
   "class": "spaced-section",
   "settings": [
     {
-      "type": "paragraph",
-      "content": "t:sections.product-recommendations.settings.paragraph__1.content"
+      "type": "header",
+      "content": "t:sections.product-recommendations.settings.header__1.content",
+      "info": "t:sections.product-recommendations.settings.header__1.info"
     },
     {
       "type": "text",
       "id": "heading",
-      "default": "You may also like",
-      "label": "t:sections.product-recommendations.settings.heading.label"
+      "label": "t:sections.product-recommendations.settings.heading.label",
+      "default": "You may also like"
     },
     {
       "type": "header",
@@ -81,6 +82,8 @@
     {
       "type": "select",
       "id": "image_ratio",
+      "label": "t:sections.product-recommendations.settings.image_ratio.label",
+      "default": "adapt",
       "options": [
         {
           "value": "adapt",
@@ -94,28 +97,28 @@
           "value": "square",
           "label": "t:sections.product-recommendations.settings.image_ratio.options__3.label"
         }
-      ],
-      "default": "adapt",
-      "label": "t:sections.product-recommendations.settings.image_ratio.label"
+      ]
     },
     {
-      "type": "checkbox",
       "id": "show_secondary_image",
+      "type": "checkbox",
       "default": false,
       "label": "t:sections.product-recommendations.settings.show_secondary_image.label"
     },
     {
-      "type": "checkbox",
       "id": "add_image_padding",
+      "type": "checkbox",
       "default": false,
       "label": "t:sections.product-recommendations.settings.add_image_padding.label"
     },
     {
-      "type": "checkbox",
       "id": "show_vendor",
+      "type": "checkbox",
       "default": false,
       "label": "t:sections.product-recommendations.settings.show_vendor.label"
     }
   ]
 }
 {% endschema %}
+
+

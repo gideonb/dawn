@@ -7,25 +7,19 @@
 {% schema %}
 {
   "name": "t:sections.apps.name",
-  "tag": "section",
   "class": "spaced-section",
+  "tag": "section",
   "settings": [
     {
       "type": "checkbox",
       "id": "include_margins",
-      "default": false,
-      "label": "t:sections.apps.settings.include_margins.label"
+      "label": "t:sections.apps.settings.include_margins.label",
+      "default": false
     }
   ],
-  "blocks": [
-    {
-      "type": "@app"
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.apps.presets.name"
-    }
-  ]
+  "blocks": [{"type": "@global"}],
+  "presets": [{
+    "name": "t:sections.apps.presets.name"
+  }]
 }
 {% endschema %}

@@ -188,10 +188,6 @@ cart-remove-button .icon-remove {
     margin-bottom: 3.5rem;
   }
 
-  .cart-item:last-child {
-    margin-bottom: 0;
-  }
-
   .cart-item__media {
     grid-row: 1 / 3;
   }

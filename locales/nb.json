@@ -50,9 +50,6 @@
       "success_message": "Kopiert til utklippstavlen!"
     }
   },
-  "date_formats": {
-    "month_year": "%B %Y"
-  },
   "newsletter": {
     "label": "Din e-postadresse",
     "success": "Takk for at du abonnerer",
@@ -65,14 +62,16 @@
     "vendor": "Selger:",
     "error": "Feil",
     "refresh_page": "Ved å gjøre et valg vil hele siden lastes inn på nytt.",
+    "selection_help": "Trykk på mellomromstasten og deretter på piltastene for å gjøre et valg.",
     "link_messages": {
       "new_window": "Åpner i et nytt vindu.",
-      "external": "Åpner eksternt nettsted."
+      "external": "Åpner eksternt nettsted.",
+      "new_window_and_external": "Åpner eksternt nettsted i et nytt vindu."
     },
+    "current_slide": "Vare [current] av [total]",
     "next_slide": "Bla til høyre",
     "previous_slide": "Bla til venstre",
-    "loading": "Laster inn …",
-    "of": "av"
+    "loading": "Laster inn …"
   },
   "blogs": {
     "article": {
@@ -96,6 +95,7 @@
     }
   },
   "onboarding": {
+    "product_description": "Dette området brukes til å beskrive produktets detaljer. Fortell kundene om hvordan produktet ser ut, føles og stilen. Legg til detaljer om farge, materialer brukt, størrelser og hvor det ble laget.",
     "product_title": "Eksempel på produkttittel",
     "collection_title": "Navnet på samlingen"
   },
@@ -103,8 +103,14 @@
     "product": {
       "add_to_cart": "Legg i handlekurv",
       "description": "Beskrivelse",
+      "empty_product_title": "Navnet på produktet ditt",
       "on_sale": "Salg",
       "product_variants": "Produktvarianter",
+      "media": {
+        "media_alt": "Last inn mediet i gallerivisningsprogrammet, {{ mediaAlt }}",
+        "video_alt": "Last inn videoen i gallerivisningsprogrammet, {{ mediaAlt }}",
+        "model_alt": "Last inn 3D-modellen i gallerivisningsprogrammet, {{ mediaAlt }}"
+      },
       "quantity": {
         "label": "Antall",
         "input_label": "Antall for {{ product }}",
@@ -171,6 +177,7 @@
     "header": {
       "announcement": "Kunngjøring",
       "menu": "Meny",
+      "menu_title": "{{ menu_title }} meny",
       "cart_count": {
         "one": "{{ count }} vare",
         "other": "{{ count }} varer"
@@ -183,6 +190,7 @@
       "subtotal": "Delsum",
       "new_subtotal": "Ny delsum",
       "note": "Spesielle instruksjoner for bestillingen",
+      "view_cart": "Vis handlekurv",
       "checkout": "Kasse",
       "empty": "Handlekurven din er tom",
       "cart_error": "Det oppstod en feil under oppdateringen av handlekurven din. Prøv på nytt.",
@@ -217,21 +225,13 @@
     },
     "collection_template": {
       "title": "Samling",
+      "all_tags": "Alle produkter",
       "sort_by_label": "Sorter etter",
+      "filter_by_tag_label": "Filtrer etter",
       "sort_button": "Sorter",
+      "product_count_one": "{{ count }} produkt",
       "product_count": "{{ count }} produkter",
-      "empty": "Ingen produkter funnet",
-      "apply": "Bruk",
-      "clear": "Fjern",
-      "clear_all": "Fjern alle",
-      "from": "Fra",
-      "filter_and_sort": "Filtrer og sorter",
-      "filter_by_label": "Filtrer etter",
-      "filter_button": "Filter",
-      "max_price": "Den høyeste prisen er {{ price }}",
-      "reset": "Tilbakestill",
-      "to": "Til",
-      "use_fewer_filters_html": "Bruk færre filtre eller <a class=\"{{ class }}\" href=\"{{ link }}\">tøm alle</a>"
+      "empty": "Denne samlingen er tom"
     }
   },
   "localization": {

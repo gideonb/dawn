@@ -50,9 +50,6 @@
       "success_message": "Nukopijuota į iškarpinę!"
     }
   },
-  "date_formats": {
-    "month_year": "%B %Y"
-  },
   "newsletter": {
     "label": "Jūsų el. pašto adresas",
     "success": "Dėkojame, kad prenumeruojate",
@@ -65,14 +62,16 @@
     "vendor": "Tiekėjas:",
     "error": "Klaida",
     "refresh_page": "Pasirenkant variantą persikrauna visas puslapis.",
+    "selection_help": "Kad pasirinktumėte, paspauskite tarpo klavišą, tada – rodyklių klavišus.",
+    "current_slide": "[current] elementas iš [total]",
     "next_slide": "Slinkite dešinėn",
     "previous_slide": "Slinkite kairėn",
     "loading": "Įkeliama...",
     "link_messages": {
       "new_window": "Atsidaro naujame lange.",
-      "external": "Atidaro išorinę svetainę."
-    },
-    "of": "iš"
+      "external": "Atidaro išorinę svetainę.",
+      "new_window_and_external": "Atidaroma išorinė svetainė naujame lange."
+    }
   },
   "blogs": {
     "article": {
@@ -98,6 +97,7 @@
     }
   },
   "onboarding": {
+    "product_description": "Šioje srityje pateikite informacijos apie gaminį. Papasakokite klientams apie gaminio išvaizdą ir stilių. Pridėkite informacijos apie spalvą, naudotas medžiagas, dydį ir kur gaminys pagamintas.",
     "product_title": "Pavyzdinio gaminio pavadinimas",
     "collection_title": "Jūsų kolekcijos pavadinimas"
   },
@@ -105,6 +105,7 @@
     "product": {
       "add_to_cart": "Įdėti į krepšelį",
       "description": "Aprašymas",
+      "empty_product_title": "Jūsų gaminio pavadinimas",
       "on_sale": "Išpardavimas",
       "product_variants": "Gaminio variantai",
       "share": "Bendrinti šį gaminį",
@@ -114,6 +115,11 @@
       "video_exit_message": "{{ title }} atveria viso ekrano filmą tame pačiame lange.",
       "xr_button": "Peržiūra savo erdvėje",
       "xr_button_label": "Funkcija „Peržiūra savo erdvėje“ elementą įkelia į papildytos realybės langą",
+      "media": {
+        "media_alt": "Įkelti mediją į galerijos žiūryklę, {{ mediaAlt }}",
+        "video_alt": "Įkelti filmą į galerijos žiūryklę, {{ mediaAlt }}",
+        "model_alt": "Įkelti trimatį modelį į galerijos žiūryklę, {{ mediaAlt }}"
+      },
       "quantity": {
         "label": "Kiekis",
         "input_label": "{{ product }} kiekis",
@@ -130,8 +136,8 @@
         "view_store_info": "Žiūrėti parduotuvės informaciją",
         "check_other_stores": "Pažiūrėti, ar yra kitose parduotuvėse",
         "pick_up_available": "Galima atsiimti",
-        "pick_up_available_at_html": "Galima atsiimti <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Šiuo metu atsiimti <span class=\"color-foreground\">{{ location_name }}</span>negalima",
+        "pick_up_available_at_html": "Galima atsiimti <strong>{{ location_name }}</strong>",
+        "pick_up_unavailable_at_html": "Šiuo metu atsiimti <strong>{{ location_name }}</strong> negalima",
         "unavailable": "Nepavyko įkelti atsiėmimo galimybių",
         "refresh": "Atnaujinti"
       }
@@ -175,6 +181,7 @@
     "header": {
       "announcement": "Skelbimas",
       "menu": "Meniu",
+      "menu_title": "„{{ menu_title }}“ meniu",
       "cart_count": {
         "one": "{{ count }} prekė",
         "other": "{{ count }} prekės (-ių)",
@@ -189,6 +196,7 @@
       "subtotal": "Tarpinė suma",
       "new_subtotal": "Nauja tarpinė suma",
       "note": "Specialūs nurodymai dėl užsakymo",
+      "view_cart": "Žr. pirkinių krepšelį",
       "checkout": "Atsiskaityti",
       "empty": "Jūsų krepšelis tuščias",
       "cart_error": "Atnaujinant krepšelį įvyko klaida. Bandykite dar kartą.",
@@ -223,21 +231,13 @@
     },
     "collection_template": {
       "title": "Kolekcija",
+      "all_tags": "Visi gaminiai",
       "sort_by_label": "Rūšiuoti pagal",
+      "filter_by_tag_label": "Filtruoti pagal",
       "sort_button": "Rūšiuoti",
+      "product_count_one": "{{ count }} gaminys",
       "product_count": "{{ count }} gaminiai (-ių)",
-      "empty": "Nerasta jokių gaminių",
-      "apply": "Taikyti",
-      "clear": "Išvalyti",
-      "clear_all": "Išvalyti viską",
-      "from": "Nuo",
-      "filter_and_sort": "Filtruoti ir rūšiuoti",
-      "filter_by_label": "Filtruoti pagal",
-      "filter_button": "Filtruoti",
-      "max_price": "Didžiausia kaina yra {{ price }}",
-      "reset": "Nustatyti iš naujo",
-      "to": "Iki",
-      "use_fewer_filters_html": "Naudoti mažiau filtrų arba <a class=\"{{ class }}\" href=\"{{ link }}\">išvalyti viską</a>"
+      "empty": "Ši kolekcija tuščia"
     }
   },
   "localization": {

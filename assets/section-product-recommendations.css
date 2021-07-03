@@ -4,9 +4,11 @@
 
 .product-recommendations__heading {
   margin: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
-.product-recommendations .grid__item {
-  padding-bottom: 0;
+@media screen and (max-width: 749px) {
+  .product-recommendations .grid__item {
+    padding-bottom: 2.5rem;
+  }
 }

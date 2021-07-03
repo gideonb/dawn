@@ -58,7 +58,7 @@
     "styles": {
       "name": "Style",
       "settings": {
-        "sale_badge_color_scheme": {
+        "accent_badge_color_scheme": {
           "options__1": {
             "label": "Tło 2"
           },
@@ -915,19 +915,6 @@
         },
         "enable_sort": {
           "label": "Włącz sortowanie"
-        },
-        "enable_filtering": {
-          "label": "Włącz filtrowanie",
-          "info": "[Dostosuj filtry](/admin/menus)"
-        },
-        "enable_sorting": {
-          "label": "Włącz sortowanie"
-        },
-        "header__1": {
-          "content": "Filtrowanie i sortowanie"
-        },
-        "header__3": {
-          "content": "Karta produktów"
         }
       }
     },
@@ -1428,8 +1415,7 @@
           "label": "Nagłówek"
         },
         "header__1": {
-          "content": "Rekomendacje produktu",
-          "info": "Dynamiczne rekomendacje wykorzystują informacje o zamówieniach i produktach do ciągłego zmieniania i ulepszania. [Dowiedz się więcej](https://help.shopify.com/en/themes/development/recommended-products)"
+          "content": "Rekomendacje produktu"
         },
         "header__2": {
           "content": "Karta produktów"

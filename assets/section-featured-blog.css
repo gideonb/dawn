@@ -2,8 +2,10 @@
   margin: 5rem 0;
 }
 
-.blog.background-secondary {
-  padding: 4rem 0 5rem;
+@media screen and (min-width: 750px) {
+  .blog:not(.background-secondary) {
+    margin: 7rem 0;
+  }
 }
 
 .blog .placeholder {
@@ -19,18 +21,6 @@
 @media screen and (min-width: 750px) {
   .blog .placeholder {
     margin: 0;
-  }
-}
-
-@media screen and (max-width: 749px) {
-  .blog:not(.no-heading) {
-    margin-top: -1rem;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .blog.no-heading {
-    margin-top: 6rem;
   }
 }
 

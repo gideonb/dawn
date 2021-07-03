@@ -1,14 +1,12 @@
 .image-with-text {
   margin-top: 5rem;
-}
-
-.image-with-text:not(.color-scheme-background-1) {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .image-with-text {
-    margin-bottom: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
   }
 }
 
@@ -82,7 +80,7 @@
   align-items: flex-start;
   height: 100%;
   justify-content: center;
-  padding: 4rem 4rem 5rem;
+  padding: 5rem 2.5rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -91,9 +89,21 @@
   }
 }
 
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .image-with-text__content {
+    padding: 5rem;
+  }
+}
+
 @media screen and (min-width: 990px) {
   .image-with-text__content {
-    padding: 6rem 7rem 7rem;
+    padding: 7rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .image-with-text__content--small {
+    padding-bottom: 5rem;
   }
 }
 

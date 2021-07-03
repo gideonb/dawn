@@ -50,9 +50,6 @@
       "success_message": "Kopirano v odložišče."
     }
   },
-  "date_formats": {
-    "month_year": "%B %Y"
-  },
   "newsletter": {
     "label": "E-poštni naslov",
     "success": "Hvala, ker ste se naročili",
@@ -65,14 +62,16 @@
     "vendor": "Ponudnik:",
     "error": "Napaka",
     "refresh_page": "Ko izberete elemente, se celotna stran osveži.",
+    "selection_help": "Za izbiro pritisnite preslednico in nato puščične tipke.",
+    "current_slide": "Izdelek [current] od [total]",
     "next_slide": "Podrsajte desno",
     "previous_slide": "Podrsajte levo",
     "loading": "Nalaganje ...",
     "link_messages": {
       "new_window": "Odpre se v novem oknu.",
-      "external": "Odpre zunanje spletno mesto."
-    },
-    "of": "od"
+      "external": "Odpre zunanje spletno mesto.",
+      "new_window_and_external": "Odpre zunanje spletno mesto v novem oknu."
+    }
   },
   "blogs": {
     "article": {
@@ -98,6 +97,7 @@
     }
   },
   "onboarding": {
+    "product_description": "To območje je namenjeno opisu lastnosti vašega izdelka. Strankam opišite videz, namen in slog izdelka. Vključite podrobnosti o barvi, uporabljenih materialih in mesto izdelave.",
     "product_title": "Primer naslova izdelka",
     "collection_title": "Ime vaše zbirke"
   },
@@ -105,6 +105,7 @@
     "product": {
       "add_to_cart": "Dodaj v košarico",
       "description": "Opis",
+      "empty_product_title": "Ime vašega izdelka",
       "on_sale": "Znižanje",
       "product_variants": "Različice izdelka",
       "share": "Deli ta izdelek",
@@ -114,6 +115,11 @@
       "video_exit_message": "{{ title }} odpre celozaslonski videoposnetek v istem oknu.",
       "xr_button": "Prikaži v prostoru",
       "xr_button_label": "Prikaz v prostoru naloži element v oknu z razširjeno resničnostjo",
+      "media": {
+        "media_alt": "Naložite predstavnostno vsebino v pregledovalnik galerije, {{ mediaAlt }}",
+        "video_alt": "Naložite 3D-model v pregledovalnik galerije, {{ mediaAlt }}",
+        "model_alt": "Naložite 3D-model v pregledovalnik galerije, {{ mediaAlt }}"
+      },
       "quantity": {
         "label": "Količina",
         "input_label": "Količina za izdelek {{ product }}",
@@ -175,6 +181,7 @@
     "header": {
       "announcement": "Obvestilo",
       "menu": "Meni",
+      "menu_title": "Meni {{ menu_title }}",
       "cart_count": {
         "one": "{{ count }} element",
         "other": "Št. elementov: {{ count }}",
@@ -189,6 +196,7 @@
       "subtotal": "Vmesna vsota",
       "new_subtotal": "Nova vmesna vsota",
       "note": "Posebna navodila za naročilo",
+      "view_cart": "Prikaži nakupovalno košarico",
       "checkout": "Zaključi nakup",
       "empty": "Vaša košarica je prazna",
       "cart_error": "Pri posodabljanju vaše košarice je prišlo do napake. Poskusite znova.",
@@ -223,21 +231,16 @@
     },
     "collection_template": {
       "title": "Zbirka",
+      "all_tags": "Vsi izdelki",
       "sort_by_label": "Razvrsti po",
+      "filter_by_tag_label": "Filtriraj po",
       "sort_button": "Razvrsti",
+      "product_count_one": "{{ count }} izdelek",
       "product_count": "Št. izdelkov: {{ count }}",
-      "empty": "Ni najdenih izdelkov",
-      "apply": "Uporabi",
-      "clear": "Počisti",
-      "clear_all": "Počisti vse",
-      "from": "Od",
-      "filter_and_sort": "Filtriranje in razvrščanje",
-      "filter_by_label": "Filtriraj po",
-      "filter_button": "Filtriraj",
-      "max_price": "Najvišja cena je {{ price }}",
-      "reset": "Ponastavi",
-      "to": "Do",
-      "use_fewer_filters_html": "Uporabite manj filtrov ali <a class=\"{{ class }}\" href=\"{{ link }}\">počistite vse</a>"
+      "empty": "Zbirka je prazna"
+    },
+    "collection_list_template": {
+      "product_count": "Št. izdelkov: {{ count }}"
     }
   },
   "localization": {

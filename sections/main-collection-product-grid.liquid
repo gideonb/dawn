@@ -69,13 +69,12 @@
                   </div>
                 </details>
               {% when 'price_range' %}
-                {% liquid
-                  assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','
-                  assign uses_comma_decimals = false
-                  if currencies_using_comma_decimals contains cart.currency.iso_code
-                    assign uses_comma_decimals = true
-                  endif
-                %}
+                {% assign currencies_using_comma_decimals = "ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND" | split: ',' %}
+                {% assign uses_comma_decimals = false %}
+                {% if currencies_using_comma_decimals contains cart.currency.iso_code %}
+                  {% assign uses_comma_decimals = true %}
+                {% endif %}
+
                 <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
                   <summary class="facets__summary">
                     <div>
@@ -204,7 +203,7 @@
               <div class="mobile-facets__header">
                 <div class="mobile-facets__header-inner">
                   <h2 class="mobile-facets__heading">{{ 'sections.collection_template.filter_and_sort' | t }}</h2>
-                  <p class="mobile-facets__count">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>
+                  <p class="mobile-facets__count">{{ 'sections.collection_template.product_count' | t: count: collection.products_count, total: collection.all_products_count }}</p>
                 </div>
               </div>
               <div class="mobile-facets__main">
@@ -398,7 +397,7 @@
         </div>
 
         <p class="collection-product-count light">
-          {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+          {{ 'sections.collection_template.product_count' | t: count: collection.products_count, total: collection.all_products_count }}
         </p>
 
         <div class="title-wrapper center">
@@ -419,14 +418,10 @@
         </div>
 
         <p class="collection-product-count light">
-          {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+          {{ 'sections.collection_template.product_count' | t: count: collection.products_count, total: collection.all_products_count }}
         </p>
 
-        <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
-          grid grid--2-col
-          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-          {% endif %} negative-margin">
+        <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop{% if collection.products_count > 4 %} grid--quarter-max{% endif %}">
           {%- for product in collection.products -%}
             <li class="grid__item">
               {% render 'product-card',
@@ -454,8 +449,8 @@
   "class": "spaced-section collection-grid-section",
   "settings": [
     {
-      "type": "range",
       "id": "products_per_page",
+      "type": "range",
       "min": 8,
       "max": 24,
       "step": 4,
@@ -469,6 +464,8 @@
     {
       "type": "select",
       "id": "image_ratio",
+      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label",
+      "default": "adapt",
       "options": [
         {
           "value": "adapt",
@@ -482,25 +479,23 @@
           "value": "square",
           "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
         }
-      ],
-      "default": "adapt",
-      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
+      ]
     },
     {
-      "type": "checkbox",
       "id": "show_secondary_image",
+      "type": "checkbox",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
     },
     {
-      "type": "checkbox",
       "id": "add_image_padding",
+      "type": "checkbox",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.add_image_padding.label"
     },
     {
-      "type": "checkbox",
       "id": "show_vendor",
+      "type": "checkbox",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
     },
@@ -509,17 +504,17 @@
       "content": "t:sections.main-collection-product-grid.settings.header__1.content"
     },
     {
-      "type": "checkbox",
       "id": "enable_filtering",
-      "default": true,
+      "type": "checkbox",
       "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
+      "default": true,
       "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
     },
     {
-      "type": "checkbox",
       "id": "enable_sorting",
-      "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+      "type": "checkbox",
+      "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label",
+      "default": true
     }
   ]
 }

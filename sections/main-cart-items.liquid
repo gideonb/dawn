@@ -40,7 +40,6 @@
                       <img class="cart-item__image"
                         src="{{ item.image | img_url: '150x' }}"
                         alt="{{ item.image.alt | escape }}"
-                        loading="lazy"
                         width="75"
                         height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
                       >
@@ -226,9 +225,11 @@
     {
       "type": "checkbox",
       "id": "show_vendor",
-      "default": false,
-      "label": "t:sections.main-cart-items.settings.show_vendor.label"
+      "label": "t:sections.main-cart-items.settings.show_vendor.label",
+      "default": false
     }
   ]
 }
 {% endschema %}
+
+

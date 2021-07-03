@@ -50,9 +50,6 @@
       "success_message": "S-a copiat în clipboard!"
     }
   },
-  "date_formats": {
-    "month_year": "%B %Y"
-  },
   "newsletter": {
     "label": "E-mailul dvs.",
     "success": "Vă mulțumim că v-ați abonat",
@@ -65,14 +62,16 @@
     "vendor": "Vânzător:",
     "error": "Eroare",
     "refresh_page": "Alegerea unei selecții are ca rezultat o reîmprospătare completă a paginii.",
+    "selection_help": "Apăsați tasta spațiu, apoi tastele săgeată pentru a face o selecție.",
+    "current_slide": "Articolul [current] din [total]",
     "next_slide": "Glisare la dreapta",
     "previous_slide": "Glisare la stânga",
     "loading": "Se încarcă...",
     "link_messages": {
       "new_window": "Se deschide într-o fereastră nouă.",
-      "external": "Deschide site-ul extern."
-    },
-    "of": "din"
+      "external": "Deschide site-ul extern.",
+      "new_window_and_external": "Deschide site-ul extern într-o fereastră nouă."
+    }
   },
   "blogs": {
     "article": {
@@ -97,6 +96,7 @@
     }
   },
   "onboarding": {
+    "product_description": "Această zonă este utilizată pentru a descrie detaliile produsului. Descrie clienților aspectul și stilul produsului. Adăugați detalii despre culoare, materialele utilizate, dimensiunea și locul în care a fost realizat.",
     "product_title": "Exemplu de titlu de produs",
     "collection_title": "Numele colecției"
   },
@@ -104,6 +104,7 @@
     "product": {
       "add_to_cart": "Adăugați în coș",
       "description": "Descriere",
+      "empty_product_title": "Numele produsului",
       "on_sale": "Vânzare",
       "product_variants": "Variante de produse",
       "share": "Distribuiți acest produs",
@@ -113,6 +114,11 @@
       "video_exit_message": "{{ title }} deschide videoclipul în ecran complet în aceeași fereastră.",
       "xr_button": "Vizualizați în spațiul dvs.",
       "xr_button_label": "Vizualizați în spațiul dvs., articolul se încarcă în fereastra de realitate augmentată",
+      "media": {
+        "media_alt": "Încărcați conținutul media în vizualizatorul Galerie, {{ mediaAlt }}",
+        "video_alt": "Încărcați videoclipul în vizualizatorul Galerie, {{ mediaAlt }}",
+        "model_alt": "Încărcați modelul 3D în vizualizatorul Galerie, {{ mediaAlt }}"
+      },
       "quantity": {
         "label": "Cantitate",
         "input_label": "Cantitate pentru {{ product }}",
@@ -129,8 +135,8 @@
         "view_store_info": "Vizualizați informațiile despre magazin",
         "check_other_stores": "Vizualizați disponibilitatea la alte magazine",
         "pick_up_available": "Ridicare disponibilă",
-        "pick_up_available_at_html": "Ridicare disponibilă la <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Ridicare indisponibilă momentan la <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_available_at_html": "Ridicare disponibilă la <strong>{{ location_name }}</strong>",
+        "pick_up_unavailable_at_html": "Ridicare indisponibilă momentan la <strong>{{ location_name }}</strong>",
         "unavailable": "Nu am putut încărca disponibilitatea pentru ridicare",
         "refresh": "Reîmprospătați"
       }
@@ -173,6 +179,7 @@
     "header": {
       "announcement": "Anunț",
       "menu": "Meniu",
+      "menu_title": "Meniul {{ menu_title }}",
       "cart_count": {
         "one": "{{ count }} articol",
         "other": "{{ count }} articole",
@@ -182,10 +189,12 @@
     "cart": {
       "title": "Coșul dvs.",
       "caption": "Articole din coș",
+      "remove": "Eliminați",
       "remove_title": "Eliminați {{ title }}",
       "subtotal": "Subtotal",
       "new_subtotal": "Subtotal nou",
       "note": "Instrucțiuni speciale legate de comandă",
+      "view_cart": "Afișați coșul de cumpărături",
       "checkout": "Finalizați comanda",
       "empty": "Coșul dvs. este gol",
       "cart_error": "A apărut o eroare în timpul actualizării coșului. Încercați din nou.",
@@ -220,30 +229,16 @@
     },
     "collection_template": {
       "title": "Colecție",
+      "all_tags": "Toate produsele",
       "sort_by_label": "Sortați după",
+      "filter_by_tag_label": "Filtrați după",
       "sort_button": "Sortați",
-      "empty": "Nu s-au găsit produse",
-      "apply": "Aplicați",
-      "clear": "Goliți",
-      "clear_all": "Goliți tot",
-      "from": "De la",
-      "filter_and_sort": "Filtrați și sortați",
-      "filter_by_label": "Filtrați după",
-      "filter_button": "Filtrați",
-      "max_price": "Cel mai mare preț este {{ price }}",
-      "reset": "Resetare",
-      "to": "Către",
-      "use_fewer_filters_html": "Utilizați mai puține filtre sau <a class=\"{{ class }}\" href=\"{{ link }}\">goliți tot</a>",
-      "product_count": {
-        "one": "Se afișează {{ product_count }} din {{ count }} produs",
-        "other": "Se afișează {{ product_count }} din {{ count }} produse",
-        "few": "Se afișează {{ product_count }} din {{ count }} produse"
-      },
-      "filters_selected": {
-        "one": "{{ count }} selectate",
-        "other": "{{ count }} selectate",
-        "few": "{{ count }} selectate"
-      }
+      "product_count_one": "{{ count }} produs",
+      "product_count": "{{ count }} produse",
+      "empty": "Această colecție este goală"
+    },
+    "collection_list_template": {
+      "product_count": "{{ count }} produse"
     }
   },
   "localization": {

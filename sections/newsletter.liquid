@@ -32,7 +32,6 @@
                     aria-describedby="Newsletter-success--{{ section.id }}"
                   {% endif %}
                   placeholder="{{ 'newsletter.label' | t }}"
-                  required
                 >
                 <label class="field__label" for="NewsletterForm--{{ section.id }}">
                   {{ 'newsletter.label' | t }}
@@ -61,8 +60,9 @@
   "class": "spaced-section spaced-section--full-width",
   "settings": [
     {
-      "type": "select",
       "id": "color_scheme",
+      "type": "select",
+      "label": "t:sections.newsletter.settings.color_scheme.label",
       "options": [
         {
           "value": "accent-1",
@@ -85,14 +85,13 @@
           "label": "t:sections.newsletter.settings.color_scheme.options__5.label"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.newsletter.settings.color_scheme.label"
+      "default": "background-1"
     },
     {
       "type": "checkbox",
       "id": "full_width",
-      "default": true,
-      "label": "t:sections.newsletter.settings.full_width.label"
+      "label": "t:sections.newsletter.settings.full_width.label",
+      "default": true
     },
     {
       "type": "paragraph",
@@ -108,8 +107,8 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Subscribe to our emails",
-          "label": "t:sections.newsletter.blocks.heading.settings.heading.label"
+          "label": "t:sections.newsletter.blocks.heading.settings.heading.label",
+          "default": "Subscribe to our emails"
         }
       ]
     },
@@ -121,8 +120,8 @@
         {
           "type": "richtext",
           "id": "paragraph",
-          "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
-          "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
+          "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label",
+          "default": "<p>Be the first to know about new collections and exclusive offers.</p>"
         }
       ]
     },
@@ -150,3 +149,5 @@
   ]
 }
 {% endschema %}
+
+

@@ -1,4 +1,3 @@
-{% comment %}theme-check-disable UndefinedObject{% endcomment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -107,7 +106,6 @@
                       aria-describedby="ContactFooter-success"
                     {% endif %}
                     placeholder="{{ 'newsletter.label' | t }}"
-                    required
                   >
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
@@ -365,15 +363,15 @@
       "name": "t:sections.footer.blocks.link_list.name",
       "settings": [
         {
-          "type": "text",
           "id": "heading",
+          "type": "text",
           "default": "Quick links",
           "label": "t:sections.footer.blocks.link_list.settings.heading.label",
           "info": "t:sections.footer.blocks.link_list.settings.heading.info"
         },
         {
-          "type": "link_list",
           "id": "menu",
+          "type": "link_list",
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label",
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
@@ -385,14 +383,14 @@
       "name": "t:sections.footer.blocks.text.name",
       "settings": [
         {
-          "type": "text",
           "id": "heading",
+          "type": "text",
           "default": "Heading",
           "label": "t:sections.footer.blocks.text.settings.heading.label"
         },
         {
-          "type": "richtext",
           "id": "subtext",
+          "type": "richtext",
           "default": "<p>Share store details, promotions, or brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
         }
@@ -401,8 +399,8 @@
   ],
   "settings": [
     {
-      "type": "select",
       "id": "color_scheme",
+      "type": "select",
       "options": [
         {
           "value": "accent-1",
@@ -434,14 +432,14 @@
       "info": "t:sections.footer.settings.header__1.info"
     },
     {
-      "type": "checkbox",
       "id": "newsletter_enable",
+      "type": "checkbox",
       "default": true,
       "label": "t:sections.footer.settings.newsletter_enable.label"
     },
     {
-      "type": "text",
       "id": "newsletter_heading",
+      "type": "text",
       "default": "Sign up to our emails",
       "label": "t:sections.footer.settings.newsletter_heading.label"
     },
@@ -453,8 +451,8 @@
     {
       "type": "checkbox",
       "id": "show_social",
-      "default": false,
-      "label": "t:sections.footer.settings.show_social.label"
+      "label": "t:sections.footer.settings.show_social.label",
+      "default": false
     },
     {
       "type": "header",
@@ -462,8 +460,8 @@
       "info": "t:sections.footer.settings.header__4.info"
     },
     {
-      "type": "checkbox",
       "id": "enable_country_selector",
+      "type": "checkbox",
       "default": true,
       "label": "t:sections.footer.settings.enable_country_selector.label"
     },
@@ -473,8 +471,8 @@
       "info": "t:sections.footer.settings.header__6.info"
     },
     {
-      "type": "checkbox",
       "id": "enable_language_selector",
+      "type": "checkbox",
       "default": true,
       "label": "t:sections.footer.settings.enable_language_selector.label"
     },
@@ -483,8 +481,8 @@
       "content": "t:sections.footer.settings.header__7.content"
     },
     {
-      "type": "checkbox",
       "id": "payment_enable",
+      "type": "checkbox",
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
     }
@@ -498,3 +496,5 @@
   }
 }
 {% endschema %}
+
+

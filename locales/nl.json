@@ -50,9 +50,6 @@
       "success_message": "Naar klembord gekopieerd!"
     }
   },
-  "date_formats": {
-    "month_year": "%B %Y"
-  },
   "newsletter": {
     "label": "Je e-mailadres",
     "success": "Bedankt voor het abonneren",
@@ -65,14 +62,16 @@
     "vendor": "Verkoper:",
     "error": "Fout",
     "refresh_page": "Een selectie kiezen resulteert in het geheel verversen van de pagina.",
+    "selection_help": "Druk op de spatiebalk en vervolgens op de pijltoetsen om een selectie te maken.",
     "link_messages": {
       "new_window": "Opent in een nieuw venster.",
-      "external": "Opent externe website."
+      "external": "Opent externe website.",
+      "new_window_and_external": "Opent externe website in een nieuw venster."
     },
+    "current_slide": "Artikel [current] of [total]",
     "next_slide": "Naar rechts schuiven",
     "previous_slide": "Naar links schuiven",
-    "loading": "Bezig met laden...",
-    "of": "van"
+    "loading": "Bezig met laden..."
   },
   "blogs": {
     "article": {
@@ -96,6 +95,7 @@
     }
   },
   "onboarding": {
+    "product_description": "Dit gebied wordt gebruikt om de gegevens van je product te beschrijven. Vertel je klanten over de stijl en hoe je product eruit ziet en hoe het aanvoelt. Voeg details toe over de kleur, de gebruikte materialen en waar het is gemaakt.",
     "product_title": "Voorbeeld producttitel",
     "collection_title": "De naam van je collectie"
   },
@@ -103,8 +103,14 @@
     "product": {
       "add_to_cart": "Aan winkelwagen toevoegen",
       "description": "Beschrijving",
+      "empty_product_title": "Naam van je product",
       "on_sale": "Aanbieding",
       "product_variants": "Productvarianten",
+      "media": {
+        "media_alt": "Media in Gallery-weergave laden, {{ mediaAlt }}",
+        "video_alt": "Video in Gallery-weergave laden, {{ mediaAlt }}",
+        "model_alt": "3D-model in Gallery-weergave laden, {{ mediaAlt }}"
+      },
       "quantity": {
         "label": "Aantal",
         "input_label": "Aantal voor {{ product }}",
@@ -171,6 +177,7 @@
     "header": {
       "announcement": "Aankondiging",
       "menu": "Menu",
+      "menu_title": "{{ menu_title }} menu",
       "cart_count": {
         "one": "{{ count }} artikel",
         "other": "{{ count }} artikelen"
@@ -179,10 +186,12 @@
     "cart": {
       "title": "Je winkelwagen",
       "caption": "Artikelen in winkelwagen",
+      "remove": "Verwijderen",
       "remove_title": "{{ title }} verwijderen",
       "subtotal": "Subtotaal",
       "new_subtotal": "Nieuw subtotaal",
       "note": "Speciale instructies voor bestelling",
+      "view_cart": "Winkelwagen bekijken",
       "checkout": "Afrekenen",
       "empty": "Je winkelwagen is leeg",
       "cart_error": "Er is een fout opgetreden bij het bijwerken van je winkelwagen. Probeer het opnieuw.",
@@ -217,21 +226,16 @@
     },
     "collection_template": {
       "title": "Collectie",
+      "all_tags": "Alle producten",
       "sort_by_label": "Sorteer op",
+      "filter_by_tag_label": "Filter op",
       "sort_button": "Sorteren",
+      "product_count_one": "{{ count }} product",
       "product_count": "{{ count }} producten",
-      "empty": "Geen producten gevonden",
-      "apply": "Toepassen",
-      "clear": "Wissen",
-      "clear_all": "Alles wissen",
-      "from": "Van",
-      "filter_and_sort": "Filteren en sorteren",
-      "filter_by_label": "Filter op",
-      "filter_button": "Filter",
-      "max_price": "De hoogste prijs is {{ price }}",
-      "reset": "Opnieuw instellen",
-      "to": "Aan",
-      "use_fewer_filters_html": "Minder filters gebruiken of <a class=\"{{ class }}\" href=\"{{ link }}\">alles wissen</a>"
+      "empty": "Deze collectie is leeg"
+    },
+    "collection_list_template": {
+      "product_count": "{{ count }} producten"
     }
   },
   "localization": {

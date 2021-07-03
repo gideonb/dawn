@@ -50,9 +50,6 @@
       "success_message": "クリップボードにコピーされました。"
     }
   },
-  "date_formats": {
-    "month_year": "%Y年%-m月%"
-  },
   "newsletter": {
     "label": "メールアドレス",
     "success": "ご登録ありがとうございます",
@@ -65,14 +62,16 @@
     "vendor": "販売元:",
     "error": "エラー",
     "refresh_page": "選択結果を選ぶと、ページが全面的に更新されます。",
+    "selection_help": "スペースキーを押してから矢印キーを押して選択します。",
     "link_messages": {
       "new_window": "新しいウィンドウで開きます。",
-      "external": "外部のウェブサイトを開きます。"
+      "external": "外部のウェブサイトを開きます。",
+      "new_window_and_external": "外部のウェブサイトを新しいウィンドウで開きます。"
     },
+    "current_slide": "アイテム [合計] 件中 [現在の数量] 件",
     "next_slide": "右にスライド",
     "previous_slide": "左にスライド",
-    "loading": "読み込み中…",
-    "of": "/"
+    "loading": "読み込み中…"
   },
   "blogs": {
     "article": {
@@ -96,6 +95,7 @@
     }
   },
   "onboarding": {
+    "product_description": "このエリアは商品の詳細を記載するために使用できます。お客様に商品についての情報を伝えましょう。色や材料、サイズ、どこで作られたのかなどの情報も追加しましょう。",
     "product_title": "商品名の例",
     "collection_title": "コレクションの名前"
   },
@@ -103,8 +103,14 @@
     "product": {
       "add_to_cart": "カートに追加する",
       "description": "説明",
+      "empty_product_title": "商品の名前",
       "on_sale": "販売",
       "product_variants": "商品バリエーション",
+      "media": {
+        "media_alt": "メディアをギャラリービューア ({{ mediaAlt }}) に読み込む",
+        "video_alt": "ビデオをギャラリービューア ({{ mediaAlt }}) に読み込む",
+        "model_alt": "3Dモデルをギャラリービューア ({{ mediaAlt }}) に読み込む"
+      },
       "quantity": {
         "label": "数量",
         "input_label": "{{ product }}の数量",
@@ -128,8 +134,8 @@
         "view_store_info": "ストア情報を表示する",
         "check_other_stores": "別のストアでの出品状況を確認する",
         "pick_up_available": "受取が可能です",
-        "pick_up_available_at_html": "<span class=\"color-foreground\">{{ location_name }}</span>での受取が可能です",
-        "pick_up_unavailable_at_html": "<span class=\"color-foreground\">{{ location_name }}</span>での受取は現在できません",
+        "pick_up_available_at_html": "<strong>{{ location_name }}</strong>での受取が可能です",
+        "pick_up_unavailable_at_html": "<strong>{{ location_name }}</strong>での受取は現在できません",
         "unavailable": "受取状況を読み込めませんでした",
         "refresh": "更新"
       }
@@ -171,6 +177,7 @@
     "header": {
       "announcement": "告知",
       "menu": "メニュー",
+      "menu_title": "{{ menu_title }}メニュー",
       "cart_count": {
         "one": "{{ count }}個のアイテム",
         "other": "{{ count }}個のアイテム"
@@ -179,10 +186,12 @@
     "cart": {
       "title": "あなたのカート",
       "caption": "カートアイテム",
+      "remove": "削除",
       "remove_title": "{{ title }}を削除する",
       "subtotal": "小計",
       "new_subtotal": "新しい小計",
       "note": "他の特別な指示",
+      "view_cart": "ショッピングカートを表示する",
       "checkout": "チェックアウト",
       "empty": "カートは空です",
       "cart_error": "カートをアップデートするときにエラーが発生しました。もう一度お試しください。",
@@ -217,28 +226,16 @@
     },
     "collection_template": {
       "title": "コレクション",
+      "all_tags": "すべての商品",
       "sort_by_label": "並び替え",
+      "filter_by_tag_label": "絞り込み",
       "sort_button": "並び替え",
-      "empty": "商品が見つかりません",
-      "apply": "適用",
-      "clear": "クリア",
-      "clear_all": "すべてクリア",
-      "from": "差出人",
-      "filter_and_sort": "絞り込みと並び替え",
-      "filter_by_label": "絞り込み",
-      "filter_button": "絞り込む",
-      "max_price": "最高価格は{{ price }}です",
-      "reset": "リセット",
-      "to": "宛先",
-      "use_fewer_filters_html": "絞り込みの数を減らす、または<a class=\"{{ class }}\" href=\"{{ link }}\">すべてクリア</a>",
-      "product_count": {
-        "one": "{{ count }}個中{{ product_count }}個の商品を表示",
-        "other": "{{ count }}個中{{ product_count }}個の商品を表示"
-      },
-      "filters_selected": {
-        "one": "{{ count }}個を選択済み",
-        "other": "{{ count }}個を選択済み"
-      }
+      "product_count_one": "{{ count }}個の商品",
+      "product_count": "{{ count }}個の商品",
+      "empty": "このコレクションは空です"
+    },
+    "collection_list_template": {
+      "product_count": "{{ count }}個の商品"
     }
   },
   "localization": {
